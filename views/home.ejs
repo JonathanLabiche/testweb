@@ -1,0 +1,17 @@
+<% include head %>
+<nav>
+</nav>
+<%# hier moet ik naar mijn javascript linken naar de for loop %>
+
+
+
+
+<% for ( var i = 0; i <  fuifruimte.features; i++) {
+        var marker = new google.maps.Marker({
+         position: {lat: fuifruimte.features[i].geometry.y , lng: fuifruimte.features[i].geometry.x },
+         map: map });
+    };
+%>
+
+<div id="map"></div>
+<% include footer %>
